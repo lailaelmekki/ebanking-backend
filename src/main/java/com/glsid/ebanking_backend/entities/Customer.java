@@ -17,6 +17,6 @@ public class Customer {
     private String name;
     private String email;
     @OneToMany(mappedBy = "customer")
-    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)//lorsque jackson il fait le mapping entre les objets java en json il ignore les relation entre les objets et ne les sterialise pas en json
     private List<BankAccount> bankAccounts;
 }
