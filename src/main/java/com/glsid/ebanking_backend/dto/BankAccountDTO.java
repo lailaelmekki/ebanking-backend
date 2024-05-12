@@ -6,3 +6,4 @@ import lombok.Data;
 public class BankAccountDTO {
     private String type;
 }
+//swagger
